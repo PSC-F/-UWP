@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="壁纸UWP.ConfPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:壁纸UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel Orientation="Vertical" Margin="0,30,0,0">
+        <StackPanel Orientation="Horizontal" Visibility="Collapsed">
+            <TextBlock Text="存储路径:" FontSize="20" Foreground="Teal"/>
+            <TextBlock  Name="FileLocal" FontSize="15" Foreground="Teal" VerticalAlignment="Center"/>
+            <Button Name="Local_button" Content="修改默认路径(未实现)" Foreground="Teal" Click="Local_button_Click"/>
+            <Button Name="Rec_localButton" Content="恢复默认" Margin="30,0,0,0" Foreground="Teal" Click="Rec_localButton_Click"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+        <TextBlock Text="版本:"  FontSize="20" Foreground="Teal"/>
+            <TextBlock Text="1.1.5   更新日志：UI调整" FontSize="15" Foreground="Teal" VerticalAlignment="Center" Name="Versionblock"/>
+           
+        </StackPanel>
+        <TextBlock Text="更多功能待解锁" FontSize="15" Foreground="Teal" VerticalAlignment="Center"/>
+
+    </StackPanel>
+</Page>
